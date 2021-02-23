@@ -1,0 +1,13 @@
+<div>
+  <div>
+    
+    <mat-icon id="close-icon" (click)="closeDialog()" class="close" style="float:right">
+        <button type="button">X</button>
+      </mat-icon>
+      <p style="color:black; font-size: 19px">Message</p>
+      <span><input type="text" value="enter the new message" [(ngModel)]="newMess" class="message" placeholder="Message" /></span>
+  </div>
+<br/>
+  <button mat-raised-button color="primary" id="yes-button" [mat-dialog-close]="newMess" class="edit">Edit</button>
+  <button mat-raised-button color="warn" [mat-dialog-close]="delete" class="delete">Delete</button>
+  </div>
